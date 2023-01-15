@@ -5,7 +5,7 @@ If you have issue with your home page url, when you change secondary language, b
 
 Just add this for your function.php in your theme folder 
 
-
+```
 add_action('bcn_after_fill', function($bcn_breadcrumb_trail){
 	foreach ($bcn_breadcrumb_trail->breadcrumbs as $index => $value){
 		if(in_array('home',$bcn_breadcrumb_trail->breadcrumbs[$index]->get_types())){
@@ -13,3 +13,4 @@ add_action('bcn_after_fill', function($bcn_breadcrumb_trail){
 		}
 	}
 });
+```
